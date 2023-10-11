@@ -1,0 +1,1 @@
+{"uuid":"bc52615b-a13e-4997-808b-87076cf98ee8","name":"LOGIN-SUCCESSFUL WITH UI","children":["8b30038a-031f-4abc-a7d7-9e5a1ff28781"],"befores":[],"afters":[{"name":"shutDown","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1696864761563,"stop":1696864762294}],"start":1696864749848,"stop":1696864762439}

@@ -1,0 +1,1 @@
+{"uuid":"b8e6d1e9-24b5-4f25-aa41-e4de99d873cd","name":"LOGIN-SUCCESSFUL WITH API","children":["cf592f4f-fc22-4244-a1d8-62309e0d76f7"],"befores":[],"afters":[{"name":"shutDown","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1696864630079,"stop":1696864630223}],"start":1696864626212,"stop":1696864630385}

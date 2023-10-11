@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.demoqa.tests.CollectionTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-10T10:10:15" hostname="WIN-2IIN7F880J6" time="12.433">
+  <properties/>
+  <testcase name="addBookToCollection_withDelete1BookTest()" classname="com.demoqa.tests.CollectionTests" time="12.433"/>
+  <system-out><![CDATA[Request URI:	https://demoqa.com/Account/v1/Login
+Request method:	POST
+Body:
+{
+    "userName": "marina",
+    "password": "Marina19@"
+}
+HTTP/1.1 200 OK
+{
+    "userId": "39f36560-5adc-45d0-bb03-8ba155504360",
+    "username": "marina",
+    "password": "Marina19@",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im1hcmluYSIsInBhc3N3b3JkIjoiTWFyaW5hMTlAIiwiaWF0IjoxNjk2ODc4NDY0fQ.COO0e37AmRrauLHIcqvfk9jVZXPWIv2pu26g5l98o_0",
+    "expires": "2023-10-16T19:07:44.000Z",
+    "created_date": "2023-10-09T18:21:25.000Z",
+    "isActive": false
+}
+Request URI:	https://demoqa.com/BookStore/v1/Book
+Request method:	DELETE
+Body:
+{
+    "userId": "39f36560-5adc-45d0-bb03-8ba155504360",
+    "isbn": "9781449325862"
+}
+HTTP/1.1 204 No Content
+
+Request URI:	https://demoqa.com/BookStore/v1/Books
+Request method:	POST
+Body:
+{
+    "userId": "39f36560-5adc-45d0-bb03-8ba155504360",
+    "collectionOfIsbns": [
+        {
+            "isbn": "9781449325862"
+        }
+    ]
+}
+HTTP/1.1 201 Created
+{
+    "books": [
+        {
+            "isbn": "9781449325862"
+        }
+    ]
+}
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 13 - let's create a new webdriver
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\User\ui-api-demoQA-project\build\downloads\1696932620588_8260_13
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\User\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+окт. 10, 2023 1:10:21 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
+[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
+[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
+окт. 10, 2023 1:10:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 114
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=117.0.5938.150 Platform=windows
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 6.16.1
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.10.0 build revision: c14d967899
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 13: ChromeDriver -> ChromeDriver: chrome on windows (df9162e0407f1fa0ca870ef9dbb191d9)
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig,webDriver=ChromeDriver: chrome on windows (df9162e0407f1fa0ca870ef9dbb191d9),proxy=null,downloadsFolder=C:\Users\User\ui-api-demoQA-project\build\downloads\1696932620588_8260_13] in 13 [size=1]
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Add shutdown hook in 13 [size=1]
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Deleted empty folder: C:\Users\User\ui-api-demoQA-project\build\downloads\1696932620588_8260_13
+[Test worker] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Close webdriver: 13 -> ChromeDriver: chrome on windows (df9162e0407f1fa0ca870ef9dbb191d9)...
+[Test worker] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Closed webdriver 13 in 801 ms
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Unregister WebDriverInstance[config=StaticConfig,webDriver=ChromeDriver: chrome on windows (null),proxy=null,downloadsFolder=C:\Users\User\ui-api-demoQA-project\build\downloads\1696932620588_8260_13] in 13 [size=0]
+]]></system-err>
+</testsuite>
